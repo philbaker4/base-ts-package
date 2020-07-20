@@ -1,5 +1,3 @@
-
-
-export const basicFunction = function(name: string) {
-    return `Hello, ${name}`
-}
+export const basicFunction = (name: string) => {
+  return `Hello, ${name}`;
+};
