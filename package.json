@@ -1,7 +1,7 @@
 {
   "name": "base-ts-package",
   "version": "1.0.0",
-  "description": "",
+  "description": "A template repository for developing Typescript packages.",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "scripts": {
