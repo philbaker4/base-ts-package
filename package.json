@@ -3,14 +3,20 @@
   "version": "1.0.0",
   "description": "",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsc",
     "test": "jest --config jestconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
-    "lint": "tslint -p tsconfig.json"
+    "lint": "tslint -p tsconfig.json",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postpublish": "git push && git push --tags"
   },
   "keywords": [],
-  "author": "",
+  "author": "Philip Baker",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^26.0.5",
@@ -23,5 +29,10 @@
   },
   "files": [
     "lib/**/*"
-  ]
+  ],
+  "homepage": "https://github.com/philbaker4/base-ts-package",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philbaker4/base-ts-package.git"
+  }
 }
