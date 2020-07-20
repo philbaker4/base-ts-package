@@ -24,5 +24,5 @@ $ npm run test
 ```
 
 ## Publishing 
-[Publish Doc](https://docs.npmjs.com/cli/publish)
+[Publish Doc](https://docs.npmjs.com/cli/publish)<br>
 [Version Doc](https://docs.npmjs.com/cli/version)
